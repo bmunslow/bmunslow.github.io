@@ -1,0 +1,22 @@
+0. Commerce up and running (e.g. kickstarter)
+0.1 Not to be confused with sandbox marketplace
+
+1. Backup
+drush bam-backup
+
+2. Download and install
+drush en commerce_marketplace_order commerce_marketplace_shipping commerce_store commerce_marketplace_funds_withdraw commerce_marketplace_funds commerce_store_access commerce_marketplace -y
+Warning - Enabling from admin/modules
+Long time - over 15 minutes
+
+3. Add (dummy) stores
+Admin > Structure > Entity Types > Commerce Store > Store > Add
+
+4. Add (dummy) products
+New reference field automatically added to ALL product types: cmp_store
+Autocomplete store
+
+5. Make sure everything is working:
+- Check 'Products' tab of any store
+- Create anonymous orders: add a products from different stores into your shopping basket, 
+  admin/commerce/orders/carts should show one order for each store and one general order with all products
