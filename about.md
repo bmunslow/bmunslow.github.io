@@ -4,27 +4,17 @@ title: About
 ---
 
 <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+  My name is Bernard Munslow and I do web development for life and for fun.  Read on!
 </p>
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+My professional career as a web developer began in 2007.  Ever since, the most valuable skill I have acquired is *learning to learn*. I also have a keen eye on detail and I like getting things done well and on time.
 
-There are currently two themes built on Poole:
+Over the years I have had the privilege of building and maintaining all sorts of web projects and services with a wide array of open source tools and technologies, including [Drupal](http://www.drupal.org), [Prestashop](http://www.prestashop.com), [TYPO3](http://www.typo3.org), custom PHP frameworks and many others.
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+Drupal merits a special place in my portfolio, since I have been working with it for a number of years.  I have now become a full-fledged **Drupal developer** and I tackle the three major disciplines in Drupal development: backend, frontend and site building.  Feel free to check out my [Drupal](https://www.drupal.org/user/1334174/track) profile!
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+Where do we go from here?
 
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
+I'm ready to keep improving, face new challenges and most importantly *keep learning*.
 
 Thanks for reading!
