@@ -29,15 +29,15 @@ You can take a look at the original bug submission and the follow the work on th
 
 [drupal\_process\_form() deletes cached form + form_state despite still needed for later POSTs with enabled page caching](https://www.drupal.org/node/1694574)
 
-Long story short, the cached form entry in the database is deleted after Drupal process a form submission in `drupal_process_form`.  Any subsequent AJAX submissions of the same form will thus fail until the cached form record is regenerated in the database.
+Long story short, the cached form entry in the database is deleted after Drupal processes a form submission in `drupal_process_form`.  Any subsequent AJAX submissions of the same form will thus fail until the cached form record is regenerated in the database.
 
-In my opinion this is critical issue which deserves close attention.  AJAX requests in form submissions are the daily bread in many websites and so is page caching for anonymous users. Unfortunately, it doesn't look like this issue is going to be fixed for Drupal 7 any time soon, so I went ahead and worked out a way around it.
+In my opinion this is a critical issue which deserves close attention.  AJAX requests in form submissions are the daily bread in many websites and so is page caching for anonymous users. Unfortunately, it doesn't look like this issue is going to be fixed for Drupal 7 any time soon, so I went ahead and worked out a way around it.
 
 ### The workaround
 
 The idea behind this solution is quite simple. We just need to make sure that any given form actually exists in the cache before an user is able to submit it.  This can be done by injecting a tiny Javascript file which will ask the server to check whether our form is properly cached, recreating the form and rebuilding it's `form_id` in case it's not.
 
-For the sake of simplicity, we will just imagine our form is rendered by means of a custom field `field_custom` attached to a node.  Some bits of the following code should be adapted to each specific use case.
+For the sake of simplicity, we will just assume our form is rendered by means of a custom field `field_custom` attached to a node.  Some bits of the following code should be adapted to each specific use case.
 
 Let's go down to the nitty-gritty.
 
