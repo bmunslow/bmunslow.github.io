@@ -25,7 +25,7 @@ If your Drupal 7 site contains these or similar use cases, it is likely to be af
 
 This is a well-documented bug which has been reported in [Drupal.org](http://www.drupal.org) since 2012.
 
-You can take a look at the original bug submission and the follow the work on the issue:
+You can take a look at the original bug submission and follow the work on the issue:
 
 [drupal\_process\_form() deletes cached form + form_state despite still needed for later POSTs with enabled page caching](https://www.drupal.org/node/1694574)
 
@@ -35,7 +35,7 @@ In my opinion this is a critical issue which deserves close attention.  AJAX req
 
 ### The workaround
 
-The idea behind this solution is quite simple. We just need to make sure that any given form actually exists in the cache before an user is able to submit it.  This can be done by injecting a tiny Javascript file which will ask the server to check whether our form is properly cached, recreating the form and rebuilding it's `form_id` in case it's not.
+The idea behind this solution is quite simple. We just need to make sure that any given form actually exists in the cache before any user is able to submit it.  This can be done by injecting a tiny Javascript file which will ask the server to check whether our form is properly cached, recreating the form and rebuilding it's `form_id` in case it's not.
 
 For the sake of simplicity, we will just assume our form is rendered by means of a custom field `field_custom` attached to a node.  Some bits of the following code should be adapted to each specific use case.
 
