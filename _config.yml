@@ -8,8 +8,8 @@ relative_permalinks: true
 
 # Setup
 title:            Bernard Munslow
-tagline:          'Full stack web and developer and Drupal enthusiast'
-description:      'Bernard Munslow is a web developer with a passion for coding, biking and cookies. Also known as <a href="https://twitter.com/b_munslow" target="_blank">@b_munslow</a> in Twitter. <a href="/about">Learn more</a>.'
+tagline:          'Full stack web developer and Drupal enthusiast'
+description:      'Web developer with a passion for coding, biking and cookies. Also known as <a href="https://twitter.com/b_munslow" target="_blank">@b_munslow</a> in Twitter. <a href="/about">Learn more</a>.'
 url:              http://www.bmunslow.com
 baseurl:          /
 
