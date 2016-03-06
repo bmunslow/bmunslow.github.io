@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: How to solve 'Invalid POST error' for cached forms submitted via AJAX in Drupal 7
 ---
 
@@ -167,3 +168,7 @@ Your should also keep an eye on the `rebuild_ajax_form_rebuild_form` callback wh
 I really hope you found this post useful.  As I mentioned above, the code needs to be tailored by your particular needs.  For example, if you want to rebuild the Login form, what you need to do is to reload the form by means of `drupal_get_form` instead of `node_load`, etc.
 
 While this solution does the job, it could definitely be improved.  It could be turned into a full module which automatically detects AJAX submit buttons in forms, then figure out the best way to rebuild the form in each case.
+
+*UPDATE (6/3/2016):*
+
+* I have finally turned this solution into a module (sandbox for the time being). [Check it out!](https://www.drupal.org/sandbox/bmunslow/2682059)
