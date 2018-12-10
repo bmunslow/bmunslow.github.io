@@ -7,13 +7,13 @@ permalink:        pretty
 # Setup
 title:            Bernard Munslow
 tagline:          'Full stack web developer and Drupal enthusiast'
-description:      'Web developer with a passion for coding, biking and cookies. Also known as <a href="https://twitter.com/b_munslow" target="_blank">@b_munslow</a> in Twitter. <a href="/about">Learn more</a>.'
-url:              http://www.bmunslow.com
+description:      'Web developer with a passion for coding, biking and cookies. Also known as <a href="https://www.drupal.org/u/bmunslow" target="_blank">@bmunslow</a> in Drupal.org <a href="/about">Learn more</a>.'
+url:              https://bmunslow.com
 baseurl:          /
 
 author:
   name:           'Bernard Munslow'
-  url:            https://twitter.com/b_munslow
+  url:            https://www.drupal.org/u/bmunslow
 
 paginate:         5
 
